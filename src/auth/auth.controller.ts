@@ -36,12 +36,13 @@ export class AuthController {
     return this.authService.logout(userId);
   }
 
+  @Public()
   @UseGuards(RefreshTokenGuard)
   @Post('refresh')
   @HttpCode(HttpStatus.OK)
   refreshTokens(
     @GetCurrentUser('sub') userId: number,
-    @GetCurrentUser('sub') refreshToken: string,
+    @GetCurrentUser('refreshToken') refreshToken: string,
   ) {
     return this.authService.refreshTokens(userId, refreshToken);
   }

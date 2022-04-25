@@ -8,7 +8,7 @@ The reason I use Argon instead of Bcrypt is that Bcrypt is only good for passwor
 ### Installation
 
 ```
-yarn install
+yarn
 ```
 
 ### How to Run

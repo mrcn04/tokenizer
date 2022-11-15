@@ -11,6 +11,13 @@ The reason I use Argon instead of Bcrypt is that Bcrypt is only good for passwor
 yarn
 ```
 
+and for Prisma
+
+```
+yarn prisma generate
+yarn prisma db push
+```
+
 ### How to Run
 
 ##### Start the Database

@@ -18,6 +18,8 @@ yarn prisma generate
 yarn prisma db push
 ```
 
+After this, just copy the variables in `.env.example` to `.env`.
+
 ### How to Run
 
 ##### Start the Database
